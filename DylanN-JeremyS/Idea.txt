@@ -1,0 +1,26 @@
+Example of ideas
+
+Parking Swap
+Car Pool
+
+Food Truck App(rating them)
+
+RateMyProfessor...
+    Projects...?
+    Add Meta Data such as (Easy teacher, but usefulness of class)
+
+App for MIS Track. Classes, Professor, Usefulness of class.
+    Track for success vs track for graduation
+    
+Similar to Fiver(?)
+
+Blue Sky
+
+Macro creator thats compatible with IOS
+
+shows aerodynamics of frsibee based on wind direction and angle of attack
+
+Idle game
+
+
+
