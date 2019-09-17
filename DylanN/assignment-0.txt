@@ -1,0 +1,48 @@
+Definitions
+Please define the following keywords:
+
+IDE-Integrated Development Environment-Place where you can write code, debug code, and see the output of code.
+Cloud-Storing and accessing data over the internet.
+AWS- Amazon Web Service- Cloud computing platform. 
+Cloud Service-Any service provided by a cloud computing platform
+Bootstrap ( Framework )- Basically working HTML,Javascript, and CSS templates
+Terminal- Generic term, refer to a linux based terminal... BASH Born Again Shell... Command prompt for Linux.
+Git- Version control system. this means we are able to work on a project with other people while maintaining data integrity.
+ this is because we do not all work on the same document, but rather copies and we ask about if our change is worthy from the group.
+Github  
+
+
+web app? build an application that doesnt require you to write code.
+why is twitch a web application, so its not gated to specific OS such as windows/mac/whatever... web app is uniform format.
+
+Single page application= google map... one page... 
+
+IP Address, unique address for a computer/server...
+when we type into a browser and click enter... our machines goes out to find the IP address... they check if they trust me...
+get a collection of packets back...
+packet contains HEADER(either we are unauthorized, we hit the right address, or we are authorized...
+
+Header, what is it, what is a http request process
+
+Presentation Tier... what is seen on the screen
+Logic Tier... whatever gets done between server and an action i perform. such as clicking and information popping up.
+Data Tier...Have our data
+
+https requests. 
+WHen we encounter problems check documentations (in regards to https errors.)
+
+Important when we make a request.
+Get
+Post
+Put**What is it
+Delete
+Patch**What is it
+
+Port 9000 used for rails applications
+port 3000 as well
+port 8080 
+
+These most common 
+
+URI
+Query Starts with ? and spaced by '&'
