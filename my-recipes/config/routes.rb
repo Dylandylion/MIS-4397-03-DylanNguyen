@@ -1,8 +1,5 @@
-# routes.rb
+Rails.application.routes.draw do
 
-Rails.application.routes.draw do 
-# ...
-
-root 'recipes#index' 
-#... 
+  resources :recipes
+  root 'recipes#index'
 end
