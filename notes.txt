@@ -1,11 +1,5 @@
-gems change 
-folder above appp.... bundle install
-should be able to run
-When typing class stuff "End" x3 "esc"
+Model is an instance of an active record. 
 
-if we want to use ruby we need a ruby tag
-<%=   %>Want to output things
-<%   %> dont want to output anything
-
-under assets... diff rails diff things... java managed here...
-Asset folder incharge of all assets... 
+Save. Checks if data is correct, then commits.
+Update
+Active...(?)
