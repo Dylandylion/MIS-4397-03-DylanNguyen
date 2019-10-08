@@ -1,0 +1,67 @@
+<%= form_for(car_info) do |f| %>
+  <% if car_info.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(car_info.errors.count, "error") %> prohibited this car_info from being saved:</h2>
+
+      <ul>
+      <% car_info.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :model %>
+    <%= f.text_field :model %>
+  </div>
+
+  <div class="field">
+    <%= f.label :year %>
+    <%= f.text_field :year %>
+  </div>
+
+  <div class="field">
+    <%= f.label :condition %>
+    <%= f.text_field :condition %>
+  </div>
+
+  <div class="field">
+    <%= f.label :location_address %>
+    <%= f.text_field :location_address %>
+  </div>
+
+  <div class="field">
+    <%= f.label :location_city %>
+    <%= f.text_field :location_city %>
+  </div>
+
+  <div class="field">
+    <%= f.label :location_state %>
+    <%= f.text_field :location_state %>
+  </div>
+
+  <div class="field">
+    <%= f.label :location_zip %>
+    <%= f.text_field :location_zip %>
+  </div>
+
+  <div class="field">
+    <%= f.label :price %>
+    <%= f.text_field :price %>
+  </div>
+
+  <div class="field">
+    <%= f.label :status %>
+    <%= f.text_field :status %>
+  </div>
+
+  <div class="field">
+    <%= f.label :sold_by %>
+    <%= f.text_field :sold_by %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

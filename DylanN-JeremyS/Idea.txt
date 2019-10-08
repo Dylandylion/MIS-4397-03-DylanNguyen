@@ -9,9 +9,7 @@ RateMyProfessor...
     Projects...?
     Add Meta Data such as (Easy teacher, but usefulness of class)
 
-App for MIS Track. Classes, Professor, Usefulness of class.
-    Track for success vs track for graduation
-    
+
 Similar to Fiver(?)
 
 Blue Sky
@@ -22,5 +20,13 @@ shows aerodynamics of frsibee based on wind direction and angle of attack
 
 Idle game
 
+App for MIS Track. Classes, Professor, Usefulness of class.
+    Track for success vs track for graduation
+    
+After figuring out logins etc,
 
+Brief message What MIS is
+What are the different jobs available
+What skill sets are necessary for those jobs
+What electives to take to obtain those skills.
 

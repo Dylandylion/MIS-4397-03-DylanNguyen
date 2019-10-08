@@ -1,4 +1,4 @@
-cities = {'CA' => "San Francisco", "MI" => "Detroit", "FL" => "Jacksonville"}
+cities = {'CA' => "San Francisco", "MI" => "Detroit", "FL" => "Jacksonville",;find_city => find_city}
 cities["NY"] = "New York"
 cities["OR"] = "Portland"
 

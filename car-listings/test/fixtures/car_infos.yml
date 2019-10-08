@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  model: MyString
+  year: MyString
+  condition: MyString
+  location_address: MyString
+  location_city: MyString
+  location_state: MyString
+  location_zip: MyString
+  price: 1.5
+  status: MyString
+  sold_by: MyString
+
+two:
+  model: MyString
+  year: MyString
+  condition: MyString
+  location_address: MyString
+  location_city: MyString
+  location_state: MyString
+  location_zip: MyString
+  price: 1.5
+  status: MyString
+  sold_by: MyString

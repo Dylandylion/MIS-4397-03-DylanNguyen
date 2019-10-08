@@ -3,3 +3,10 @@ Model is an instance of an active record.
 Save. Checks if data is correct, then commits.
 Update
 Active...(?)
+
+#Heredoc 
+[not sure what goes here] << ["identifier"]
+[text]
+["identifier"]
+
+similar to an echo.

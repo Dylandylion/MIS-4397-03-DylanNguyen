@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @prospect.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @prospect.last_name %>
+</p>
+
+<p>
+  <strong>Email address:</strong>
+  <%= @prospect.email_address %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @prospect.address %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @prospect.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @prospect.state %>
+</p>
+
+<p>
+  <strong>Zip:</strong>
+  <%= @prospect.zip %>
+</p>
+
+<p>
+  <strong>Mobile phone number:</strong>
+  <%= @prospect.mobile_phone_number %>
+</p>
+
+<%= link_to 'Edit', edit_prospect_path(@prospect) %> |
+<%= link_to 'Back', prospects_path %>

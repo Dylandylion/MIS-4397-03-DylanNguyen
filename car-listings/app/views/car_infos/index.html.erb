@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Car Infos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Year</th>
+      <th>Condition</th>
+      <th>Location address</th>
+      <th>Location city</th>
+      <th>Location state</th>
+      <th>Location zip</th>
+      <th>Price</th>
+      <th>Status</th>
+      <th>Sold by</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @car_infos.each do |car_info| %>
+      <tr>
+        <td><%= car_info.model %></td>
+        <td><%= car_info.year %></td>
+        <td><%= car_info.condition %></td>
+        <td><%= car_info.location_address %></td>
+        <td><%= car_info.location_city %></td>
+        <td><%= car_info.location_state %></td>
+        <td><%= car_info.location_zip %></td>
+        <td><%= car_info.price %></td>
+        <td><%= car_info.status %></td>
+        <td><%= car_info.sold_by %></td>
+        <td><%= link_to 'Show', car_info %></td>
+        <td><%= link_to 'Edit', edit_car_info_path(car_info) %></td>
+        <td><%= link_to 'Destroy', car_info, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Car Info', new_car_info_path %>

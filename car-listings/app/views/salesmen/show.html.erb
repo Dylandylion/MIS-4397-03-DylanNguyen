@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @salesman.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @salesman.last_name %>
+</p>
+
+<p>
+  <strong>Email address:</strong>
+  <%= @salesman.email_address %>
+</p>
+
+<%= link_to 'Edit', edit_salesman_path(@salesman) %> |
+<%= link_to 'Back', salesmen_path %>
