@@ -1,0 +1,1 @@
+check projects>ex47>tests
