@@ -17,7 +17,7 @@ class SalesmenControllerTest < ActionDispatch::IntegrationTest
 
   test "should create salesman" do
     assert_difference('Salesman.count') do
-      post salesmen_url, params: { salesman: { email_address: @salesman.email_address, first_name: @salesman.first_name, last_name: @salesman.last_name } }
+      post salesmen_url, params: { salesman: { email_address: @salesman.email_address, first_name: @salesman.first_name, last_name: @salesman.last_name, string: @salesman.string } }
     end
 
     assert_redirected_to salesman_url(Salesman.last)
@@ -34,7 +34,7 @@ class SalesmenControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update salesman" do
-    patch salesman_url(@salesman), params: { salesman: { email_address: @salesman.email_address, first_name: @salesman.first_name, last_name: @salesman.last_name } }
+    patch salesman_url(@salesman), params: { salesman: { email_address: @salesman.email_address, first_name: @salesman.first_name, last_name: @salesman.last_name, string: @salesman.string } }
     assert_redirected_to salesman_url(@salesman)
   end
 

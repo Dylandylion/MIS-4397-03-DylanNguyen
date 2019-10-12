@@ -3,9 +3,11 @@
 one:
   first_name: MyString
   last_name: MyString
+  string: MyString
   email_address: MyString
 
 two:
   first_name: MyString
   last_name: MyString
+  string: MyString
   email_address: MyString

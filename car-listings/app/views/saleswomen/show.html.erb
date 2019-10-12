@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Full name:</strong>
+  <%= @saleswoman.full_name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @saleswoman.description %>
+</p>
+
+<p>
+  <strong>Profile image url:</strong>
+  <%= @saleswoman.profile_image_url %>
+</p>
+
+<%= link_to 'Edit', edit_saleswoman_path(@saleswoman) %> |
+<%= link_to 'Back', saleswomen_path %>

@@ -10,3 +10,6 @@ Active...(?)
 ["identifier"]
 
 similar to an echo.
+
+Bootstrap stuff at top and bottom
+Top ?? bot jquery

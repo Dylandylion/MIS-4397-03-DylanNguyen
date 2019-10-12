@@ -1,0 +1,42 @@
+<p id="notice"><%= notice %></p>
+
+<h1 class="text-center">Saleswomen</h1>
+
+<table class="table table-striped">
+  <thead>
+    <tr class="">
+      <th class="p-2 d-block d-sm-none">Full Profile</th>
+      <th class="text-nowrap w-25 p-3 d-none d-sm-inline-block">Full name</th>
+      <th class="text-nowrap w-25 p-3 d-none d-sm-inline-block">Description</th>
+      <th class="text-nowrap w-25 p-3 d-none d-sm-inline-block">Profile image url</th>
+      <th class="text-nowrap w-25 p-3 d-none d-sm-inline-block">Options</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @saleswomen.each do |saleswoman| %>
+      <tr class="">
+        <td class="p-2 d-block d-sm-none">
+          <img src="<%= saleswoman.profile_image_url %>" height="200"/>
+          <br>
+          <label>Full Name</label>
+          <h3 style="font-size: 12px;"><%= saleswoman.full_name %></h3>
+          <label>Description</label>
+          <p style="font-size: 10px;"><%= saleswoman.description %></p>
+        </td>
+        <td class="w-25 p-3 d-none d-sm-inline-block"><%= saleswoman.full_name %></td>
+        <td class="w-25 p-3 d-none d-sm-inline-block"><%= saleswoman.description %></td>
+        <td class="w-25 p-3 d-none d-sm-inline-block"><img src="<%= saleswoman.profile_image_url %>" height="200"/></td>
+        <td class="w-25 p-3 d-none d-sm-inline-block">
+          <%= link_to 'Show', saleswoman %><br/>
+          <%= link_to 'Edit', edit_saleswoman_path(saleswoman) %><br/>
+          <%= link_to 'Destroy', saleswoman, method: :delete, data: { confirm: 'Are you sure?' } %>
+          </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Saleswoman', new_saleswoman_path %>

@@ -18,17 +18,17 @@ end
 end
 
 car_cond = ["Bad","Fair","New"]
-car_stat = ["Bad","Fair","New"]
+car_stat = ["Used","Sold","New"]
 #Cars
 200.times do |i| 
     CarInfo.create(model: Faker::Vehicle.model ,year: Faker::Vehicle.year, 
-    condition: rand(car_cond.length),
+    condition: car_cond[rand(3)],
     location_address: Faker::Address.street_address,
 	location_city: Faker::Address.city,
 	location_state: Faker::Address.state,
 	location_zip: Faker::Address.zip,
 	price: Faker::Number.decimal(l_digits: 5, r_digits: 2),
-	status: rand(car_stat.length),
+	status: car_stat[rand(3)],
 	sold_by: Faker::Vehicle.manufacture).save
 end
 
@@ -43,4 +43,17 @@ end
 	state: Faker::Address.state,
 	zip: Faker::Address.zip,
 	mobile_phone_number: Faker::PhoneNumber.phone_number).save
+end
+
+cute_gif = ["https://media0.giphy.com/media/1hM5kW7OU6d7AOUUjv/giphy.gif","https://media0.giphy.com/media/11JfYxBmCpQDde/giphy.gif","https://media0.giphy.com/media/FOL5mK0tXUmXe/giphy.gif","https://media2.giphy.com/media/oJWx7MtpR2qdi/giphy.gif","http://giphygifs.s3.amazonaws.com/media/bmrxNoGqGNMAM/giphy.gif","https://media3.giphy.com/media/2FhASosZtLUPe/giphy.gif"]
+
+50.times do |i| 
+   Saleswoman.create(
+   full_name: Faker::Name.name,
+   description: Faker::Marketing.buzzwords,
+   profile_image_url: cute_gif[rand(6)]).save
+end
+
+200.times do |i|
+	Profile.create(name: Faker::Name.name,image: Faker::Avatar.image).save
 end

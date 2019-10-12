@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :profiles
+  resources :saleswomen
   resources :prospects
   resources :car_infos
   resources :salesmen
