@@ -6,10 +6,14 @@ class Sentence
     
     def initialize(subject,verb,object)
         
-        @subject = subject.word
-        @verb = verb.word
-        @object = object.word
+        @subject = subject
+        @verb = verb
+        @object = object
     end
+    def to_s
+        "#{@subject},#{@verb},#{@object}"
+    end
+        
     
 end
 
@@ -23,20 +27,24 @@ end
 
 def match(word_list, expecting)
     begin
+    
         word = word_list.shift
         if word.token == expecting
             word
         else
             nil
         end
+        
     rescue
         nil
     end
 end
 
 def skip(word_list, token)
+
     while peek(word_list) == token
         match(word_list, token)
+
     end
 end
 
@@ -77,11 +85,10 @@ def parse_sentence(word_list)
     start = peek(word_list)
     
     if start == :noun
-        subj = match(word_list, subj)
-        return parse_subject(word_list, subj)
+        subj = match(word_list, :noun)
+              return parse_subject(word_list, subj)
     elsif start == :verb
-    
-        return parse_subject(word_list, Pair.new(:noun,"player"))
+            return parse_subject(word_list, Pair.new(:noun,"player"))
     else
         raise ParserError.new("Must start with subject, object, or verb not: #{start}")
     end
