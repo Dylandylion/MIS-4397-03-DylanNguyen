@@ -1,6 +1,7 @@
 class CarsController < ApplicationController
   before_action :set_car, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_model!
+  
   # GET /cars
   # GET /cars.json
   def index
@@ -71,4 +72,6 @@ class CarsController < ApplicationController
     def car_params
       params.require(:car).permit(:model, :year, :description, :color, :price, :use)
     end
+    
+    
 end

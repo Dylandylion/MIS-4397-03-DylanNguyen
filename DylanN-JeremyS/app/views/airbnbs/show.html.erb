@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Image url:</strong>
+  <%= @airbnb.image_url %>
+</p>
+
+<p>
+  <strong>Room type:</strong>
+  <%= @airbnb.room_type %>
+</p>
+
+<p>
+  <strong>Ammenities:</strong>
+  <%= @airbnb.ammenities %>
+</p>
+
+<p>
+  <strong>Guest amount:</strong>
+  <%= @airbnb.guest_amount %>
+</p>
+
+<p>
+  <strong>Number of beds:</strong>
+  <%= @airbnb.number_of_beds %>
+</p>
+
+<p>
+  <strong>Number of bedrooms:</strong>
+  <%= @airbnb.number_of_bedrooms %>
+</p>
+
+<p>
+  <strong>Restroom count:</strong>
+  <%= @airbnb.restroom_count %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @airbnb.price %>
+</p>
+
+<p>
+  <strong>Pets:</strong>
+  <%= @airbnb.pets %>
+</p>
+
+<%= link_to 'Edit', edit_airbnb_path(@airbnb) %> |
+<%= link_to 'Back', airbnbs_path %>

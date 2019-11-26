@@ -1,0 +1,67 @@
+<%= form_for(airbnb) do |f| %>
+  <% if airbnb.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(airbnb.errors.count, "error") %> prohibited this airbnb from being saved:</h2>
+
+      <ul>
+      <% airbnb.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :image_url %>
+    <%= f.text_field :image_url %>
+  </div>
+
+  <div class="field">
+    <%= f.label :string %>
+    <%= f.text_field :string %>
+  </div>
+
+  <div class="field">
+    <%= f.label :room_type %>
+    <%= f.text_field :room_type %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ammenities %>
+    <%= f.text_field :ammenities %>
+  </div>
+
+  <div class="field">
+    <%= f.label :guest_amount %>
+    <%= f.text_field :guest_amount %>
+  </div>
+
+  <div class="field">
+    <%= f.label :number_of_beds %>
+    <%= f.text_field :number_of_beds %>
+  </div>
+
+  <div class="field">
+    <%= f.label :number_of_bedrooms %>
+    <%= f.text_field :number_of_bedrooms %>
+  </div>
+
+  <div class="field">
+    <%= f.label :restroom_count %>
+    <%= f.text_field :restroom_count %>
+  </div>
+
+  <div class="field">
+    <%= f.label :price %>
+    <%= f.text_field :price %>
+  </div>
+
+  <div class="field">
+    <%= f.label :pets %>
+    <%= f.check_box :pets %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
